@@ -1,0 +1,1002 @@
+@import "_variables";
+
+.amelia-search {
+  overflow: hidden;
+
+  h2 {
+    padding: 0;
+  }
+}
+
+.amelia-app-booking {
+
+  #am-search-booking {
+    width: 100%;
+    display: table;
+
+    .am-search-filters {
+      width: 320px;
+      max-width: 360px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: top;
+      padding: @padding-medium*2;
+      border: 1px solid @color-divider-gray;
+      border-right: none;
+      background-color: @color-search-filters-bg;
+      position: relative;
+      line-height: 1;
+      box-sizing: border-box;
+
+      .am-close-icon {
+        display: none;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        cursor: pointer;
+        font-size: 24px;
+        @media @less-then-small {
+          top: 16px;
+          right: 16px;
+        }
+      }
+
+      .am-search-filter {
+        margin: @margin-big 0;
+
+        h3 {
+          margin: 0 0 @margin-small;
+          font-size: @small-fs;
+          color: @color-text-second;
+        }
+      }
+
+      #am-calendar-picker {
+
+      }
+
+      .am-calendar-picker {
+        background-color: transparent !important;
+        border: none !important;
+
+        & > div.c-pane {
+          min-width: 100% !important;
+        }
+
+        .popover-content {
+          background: #fff !important;
+
+          table {
+            padding: 0;
+            margin: 0;
+          }
+
+          tr:nth-child(odd) {
+            background: #fff;
+          }
+
+          .c-table-cell {
+            &.c-active, &:hover {
+              background: fade(@color-accent, 15%);
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+
+      .el-col {
+        .el-date-editor.el-input, .el-date-editor.el-input__inner {
+          width: 100%;
+        }
+      }
+
+      .am-search-filter-services {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        label {
+          list-style: none;
+          padding: 0;
+          margin: 0 0 @margin-small;
+          width: 100%;
+          display: inline-block;
+          white-space: nowrap;
+          overflow: hidden !important;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    //Collapsed
+    &.am-collapsed {
+      .am-search-filters {
+        position: absolute;
+        left: -360px;
+        z-index: 2;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: all 0.3s ease;
+        border-right: 1px solid @color-divider-gray;
+
+        &.am-show-filters {
+          -ms-transform: translate(360px, 0); /* IE 9 */
+          -webkit-transform: translate(360px, 0); /* Safari */
+          transform: translate(360px, 0); /* Standard syntax */
+        }
+
+        @media @less-then-small {
+          width: 100%;
+          padding: @padding-medium;
+        }
+
+        .am-close-icon {
+          display: block;
+        }
+      }
+
+      .am-search-results {
+        .am-search-input {
+          .el-input {
+            margin-left: @margin-big*2
+          }
+
+          .am-filter-icon {
+            display: block;
+          }
+        }
+
+        .am-service-list-container {
+          .am-service {
+            .am-service-header {
+              display: block;
+              .am-service-data {
+                display: block;
+                margin-top: @margin-big;
+                padding: 0;
+              }
+              .am-service-price {
+                position: absolute;
+                top: 24px;
+                right: 24px;
+                font-size: 20px;
+                padding: @padding-small @padding-medium;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //Search results
+    .am-search-results {
+      display: table-cell;
+      width: 100%;
+      vertical-align: top;
+      border: 1px solid @color-divider-gray;
+
+      .am-empty-state {
+        text-align: center;
+        padding:@padding-big*4 @padding-medium;
+
+        h2 {
+          font-size: @big-fs;
+          padding-top: @padding-small;
+        }
+
+        p {
+          color: @color-text-second;
+        }
+
+        img, svg {
+          max-width: 240px;
+
+          path#Oval-8 {
+            fill: @color-accent;
+          }
+        }
+      }
+
+      .am-spinner {
+        text-align: center;
+        padding-top: @padding-big*8;
+        padding-bottom: @padding-big*8;
+      }
+
+      .am-search-input {
+        //background-color: @color-accent;
+        background: linear-gradient(135deg, @color-gradient1 0%, @color-gradient2 100%);
+        padding: @padding-medium @padding-medium;
+        position: relative;
+        overflow: hidden;
+
+        .am-filter-icon {
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+          display: none;
+          padding: @padding-small;
+          box-sizing: content-box;
+          background: shade(@color-accent, 25%);
+
+          border-radius: 3px;
+          border: 1px solid #fff;
+
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        .el-input {
+          width: calc(~'100%' - @margin-big * 2);
+
+          span {
+            color: @color-white;
+            font-size: @regular-fs;
+
+            i {
+              font-weight: @bold;
+            }
+          }
+
+          input {
+            background-color: transparent;
+            color: @color-white;
+            border: none;
+            font-size: @regular-fs;
+            font-weight: @light;
+            padding-left: @padding-medium*2;
+          }
+
+          ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: @color-white;
+            opacity: 1; /* Firefox */
+          }
+
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: @color-white;
+          }
+
+          ::-ms-input-placeholder { /* Microsoft Edge */
+            color: @color-white;
+          }
+        }
+      }
+
+      .am-service-list {
+        padding: @padding-medium*2;
+        @media @less-then-small {
+          padding: @padding-medium;
+        }
+      }
+
+      .am-service-list-container {
+        padding: @padding-big 0;
+
+        .am-service {
+          border: 1px solid @color-divider-gray;
+          margin-bottom: @margin-medium*2;
+          border-radius: 3px;
+
+          &.am-active-book {
+            box-shadow: 0 0 16px 1px fade(@color-divider-gray, 90%);
+          }
+
+          .am-service-header {
+            padding: @padding-big;
+            position: relative;
+            background: #fff;
+            display: flex;
+            align-items: flex-start;
+
+            .am-service-image {
+              display: inline-block;
+              vertical-align: middle;
+              border-radius: 50%;
+              width: 60px;
+              height: 60px;
+              max-width: 60px;
+              max-height: 60px;
+              flex: none;
+
+              img, svg {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+              }
+            }
+
+            .am-service-data {
+              display: inline-block;
+              vertical-align: middle;
+              padding: 0 @padding-medium;
+              @media @less-then-medium {
+                display: block;
+                padding: 0;
+                margin-top: @margin-medium;
+              }
+
+              .am-service-title {
+                max-width: 80%;
+                h2 {
+                  font-size: @medium-fs;
+                  font-weight: @regular;
+                }
+              }
+
+              .am-service-provider {
+                img {
+                  display: inline-block;
+                  font-size: @small-fs;
+                  margin-top: -5px;
+                  width: 24px;
+                  height: 24px;
+                  border-radius: 50%;
+                  border: 2px solid @color-white;
+                  margin-right: @margin-small/2;
+                }
+              }
+
+              .am-service-info {
+                display: flex;
+                @media @less-then-small {
+                  display: block;
+                }
+
+                div {
+                  font-size: @small-fs;
+                  color: @color-text-second;
+                  display: inline-block;
+                  border-right: 1px solid @color-divider-gray;
+                  margin-right: @margin-small;
+                  padding-right: @padding-small;
+                  @media @less-then-small {
+                    display: block;
+                    padding: 0;
+                    border: none;
+                  }
+
+                  &:last-child {
+                    border-right: none;
+                  }
+
+                  img, svg {
+                    display: inline-block;
+                    vertical-align: text-top;
+                  }
+                }
+              }
+            }
+
+            .am-service-price {
+              display: inline-block;
+              margin-left: auto;
+              padding: @padding-medium @padding-big;
+              border-radius: 30px;
+              background-color: fade(@color-accent, 7%);
+              color: @color-accent;
+              font-size: @big-fs;
+              line-height: 1.2;
+
+              sup {
+                font-size: @small-fs;
+                font-weight: @light;
+                margin-left: 2px;
+              }
+            }
+          }
+
+          .el-collapse {
+            border-bottom: 0;
+            border-top: 1px solid @color-divider-gray;
+          }
+
+          .el-collapse-item {
+
+            .el-collapse-item__header {
+              padding: 0 @padding-medium;
+              text-align: center;
+              font-weight: @light;
+              font-size: @medium-fs;
+              border-bottom: 1px solid @color-divider-gray;
+              justify-content: center;
+
+              &:hover {
+                color: @color-accent;
+              }
+
+              .el-collapse-item__arrow {
+                float: none;
+                transform: rotate(90deg);
+                margin: 0 @margin-small;
+
+                i {
+                  &:before {
+
+                  }
+                }
+              }
+
+              &.is-active {
+                .el-collapse-item__arrow {
+                  transform: rotate(-90deg);
+                }
+              }
+            }
+
+            .el-collapse-item__wrap {
+              padding: @padding-big;
+              @media @less-then-small {
+                padding: @padding-medium;
+              }
+
+              .el-collapse-item__content {
+                padding-bottom: 0;
+              }
+
+              h3 {
+                text-align: center;
+                margin-bottom: @margin-big;
+              }
+
+              .am-service-extras {
+                margin: @margin-big 0;
+                height: 132px;
+                overflow-y: auto;
+
+                .el-checkbox {
+                  white-space: normal;
+                  margin: 0;
+                  padding: 0;
+                }
+
+                .el-checkbox__input {
+                  margin-right: @margin-small;
+                }
+
+                .el-checkbox__label {
+                  padding-left: 0;
+                }
+
+                .el-row {
+                  margin-bottom: @margin-medium;
+                }
+
+                .el-col {
+                  @media @less-then-small {
+                    margin-bottom: @margin-small;
+                  }
+                }
+
+                .el-input-number {
+                  max-width: 100%;
+
+                  &.is-disabled {
+                    .el-input-number__decrease, .el-input-number__increase {
+                      border-color: #e4e7ed;
+                      color: #e4e7ed;
+                    }
+                  }
+                }
+              }
+
+              .am-grouped {
+                margin-bottom: @margin-big;
+                padding-bottom: @padding-big;
+                border-bottom: 1px solid @color-divider-gray;
+
+                h4 {
+                  margin-bottom: 0;
+                  font-weight: @regular;
+                }
+              }
+
+              .am-appointment-times {
+                margin-bottom: @margin-big;
+                height: 132px;
+                max-height: 132px;
+                overflow-y: auto;
+
+                .el-radio-button {
+                  margin: @margin-small/2;
+
+                  .el-radio-button__inner {
+                    border: 1px solid @color-divider-gray;
+                    border-radius: 3px;
+                    color: @color-text-prime;
+                    width: 168px;
+
+                    &:hover {
+                      color: @color-accent;
+                    }
+                  }
+
+                  .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+                    background-color: @color-accent;
+                    border-color: @color-accent;
+                    box-shadow: none;
+                    -webkit-box-shadow: none;
+                    color: @color-white;
+
+                    &:hover {
+                      color: @color-white;
+                    }
+                  }
+
+                  .el-radio-button__orig-radio:disabled + .el-radio-button__inner {
+                    &:hover {
+                      color: @color-light-gray;
+                    }
+                  }
+                }
+
+                .el-radio-group {
+                  text-align: center;
+                  width: 100%;
+                }
+              }
+
+            }
+          }
+        }
+      }
+
+      .am-pagination {
+        p {
+          font-size: @mini-fs;
+          color: @color-text-second;
+          margin: @margin-small/2 0 @margin-small/2;
+          padding: 0;
+          @media @less-then-small {
+            text-align: center;
+          }
+        }
+
+        .el-pagination {
+          text-align: right;
+          @media @less-then-small {
+            text-align: center;
+          }
+
+          .el-pager li {
+            height: 32px;
+            line-height: 32px;
+            padding: 0 @padding-small;
+            color: @color-text-second;
+            border-top: 1px solid @color-divider-gray;
+            border-bottom: 1px solid @color-divider-gray;
+            border-left: 1px solid @color-divider-gray;
+
+            &:first-child {
+              border-left: none;
+            }
+
+            @media @less-then-small {
+              padding: 0 @padding-small/3;
+              min-width: 24px;
+            }
+
+            &.active {
+              background-color: @color-accent;
+              border-color: @color-accent;
+              color: @color-white;
+
+              &:hover {
+                color: @color-white;
+              }
+            }
+
+            &:hover {
+              color: @color-accent;
+            }
+          }
+
+          button {
+            border: 1px solid @color-divider-gray;
+            height: 32px;
+            padding: 0 @padding-small;
+
+            &:hover {
+              color: @color-accent;
+            }
+
+            &.btn-prev {
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
+              border-bottom-right-radius: 0;
+              border-top-right-radius: 0;
+            }
+
+            &.btn-next {
+
+              border-top-right-radius: 3px;
+              border-bottom-right-radius: 3px;
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/* Dialogs */
+.am-modal {
+  .el-dialog {
+    background: #fff;
+    border-radius: 6px;
+    width: 860px;
+    overflow: hidden;
+    @media @less-then-medium {
+      width: 100%;
+    }
+
+    .el-dialog__header {
+      padding: 0;
+      margin: 0;
+    }
+
+    .el-dialog__body {
+      padding: @padding-medium*2;
+      text-align: left;
+    }
+
+    .el-dialog__footer {
+      padding: 0 @padding-medium*2 @padding-medium*2;
+    }
+  }
+
+  .el-form-item {
+    margin-bottom: @margin-big;
+  }
+
+  .am-confirmation-booking-header {
+    text-align: center;
+    margin-bottom: @margin-big;
+
+    img, svg {
+      border-radius: 50%;
+      max-width: 80px;
+      width: 80px;
+      height: 80px;
+    }
+
+    h2 {
+      font-weight: @medium;
+      padding: @padding-medium;
+      margin: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: @small-fs;
+    color: @color-text-prime;
+  }
+
+  .am-employee-photo {
+    border-radius: 50%;
+    width: 24px;
+    max-width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: @margin-small/2;
+  }
+
+  .el-row {
+    margin-bottom: @margin-small;
+    padding: 0 @padding-small;
+  }
+
+  .am-add-coupon {
+    margin-bottom: @margin-medium;
+
+    span {
+      color: @color-accent;
+      font-size: @mini-fs;
+    }
+
+    .el-input__inner {
+      height: 32px;
+    }
+
+    svg, img {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 2px;
+      vertical-align: middle;
+
+      path {
+        fill: @color-accent;
+      }
+    }
+
+    .el-form-item {
+      margin-bottom: 0;
+    }
+
+    .el-input-group__append, .el-input-group__prepend {
+      background-color: @color-accent;
+      color: @color-white;
+      border-color: @color-accent;
+
+      &:hover {
+        background-color: fade(@color-accent, 15%);
+        border-color: fade(@color-accent, 15%);
+
+        .el-button {
+          color: @color-text-prime;
+          background-color: transparent;
+          border-color: transparent;
+        }
+      }
+
+      .el-button {
+        background-color: transparent;
+        border-color: transparent;
+        color: @color-white;
+      }
+    }
+  }
+
+  .am-add-coupon-field {
+    span {
+      visibility: hidden;
+    }
+  }
+
+  .am-confirm-booking-form {
+    .am-confirm-booking-data {
+      margin-bottom: 0;
+    }
+
+    .am-confirm-booking-payment {
+      margin-top: -24px;
+    }
+
+    .am-confirmation-booking-details {
+      border-bottom: 1px solid @color-divider-gray;
+      margin-bottom: @margin-big;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid @color-divider-gray;
+      padding: @padding-big 0;
+      @media @less-then-medium {
+        display: block;
+      }
+
+      > div {
+        margin-right: @margin-small;
+        @media @less-then-medium {
+          display: inline-block;
+          margin-bottom: @margin-medium;
+          min-width: 48%;
+        }
+
+        p {
+          margin: 0 0 @margin-small/2;
+        }
+      }
+    }
+  }
+
+  .am-custom-fields {
+    display: inline-block;
+    width: 100%;
+
+    .el-row {
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-bottom: 0;
+
+      .el-col:nth-child(odd) {
+        clear: both;
+      }
+    }
+
+    .el-upload-dragger {
+      border: 2px dashed @color-accent;
+      height: 40px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      color: @color-accent;
+      box-sizing: border-box;
+      display: flex;
+
+      .el-icon-upload {
+        margin: 0 0 0 0;
+      }
+
+      i {
+        display: inline;
+        padding: @padding-small/4;
+        color: @color-accent;
+        font-size: @medium-fs+4px;
+        line-height: 36px;
+      }
+
+      span {
+        color: @color-accent;
+      }
+    }
+  }
+
+  .am-confirmation-total {
+    background-color: fade(@color-accent, 10%);
+    padding: @padding-small;
+
+    p {
+      font-weight: @medium;
+
+      &.am-align-right {
+        color: @color-accent;
+      }
+    }
+  }
+
+  .am-confirmation-extras-cost {
+    background-color: fade(@color-accent, 10%);
+    padding-top: @padding-small/2;
+    padding-bottom: @padding-small/2;
+
+    div {
+      line-height: 24px;
+    }
+
+    .el-collapse {
+      border: none;
+
+      .el-collapse-item__header {
+        height: 24px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-size: @small-fs;
+        color: @color-text-prime;
+        background: none;
+
+        .am-extras-title {
+          display: inline-block;
+          font-weight: @regular;
+          padding-left: 12px;
+        }
+
+        .am-extras-total-cost {
+          float: right;
+        }
+
+        i {
+          line-height: 24px;
+          margin-right: -3px;
+          margin-left: 1px;
+        }
+      }
+
+      .el-collapse-item__wrap {
+        background: none;
+        border: none;
+        padding-left: @padding-big/2;
+
+        .el-collapse-item__content {
+          padding: 0;
+
+          .am-extras-details {
+            display: inline-block;
+          }
+
+          .am-extras-cost {
+            display: inline-block;
+            float: right;
+            padding-right: @padding-big/2;
+          }
+        }
+      }
+    }
+  }
+
+  .dialog-footer {
+    margin-top: @margin-big;
+    text-align: center;
+  }
+
+}
+
+.am-waiting-confirmation, .am-success-payment, .am-booking-fetched {
+  text-align: center;
+  @media @less-then-small {
+    padding: @padding-medium;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: @margin-big;
+    color: @color-text-second;
+    letter-spacing: 2px;
+  }
+
+  .el-button a {
+    color: @color-white;
+  }
+
+  .am-svg-wrapper {
+    position: relative;
+    margin: 0 0 @margin-big;
+
+    .am-hourglass {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 32px;
+      height: 42px;
+      padding: 0;
+      margin-left: -16px;
+      margin-top: -24px;
+
+      path {
+        fill: @color-accent;
+      }
+    }
+
+    .am-congrats {
+      width: 96px;
+      padding: 0;
+      margin: @margin-big;
+      /*border-radius: 50%;
+      border: 2px solid @color-divider-gray;*/
+
+      path {
+        fill: @color-accent;
+      }
+    }
+
+    .am-spin {
+      width: 160px;
+      padding: 0;
+      margin: 0;
+
+      path {
+        stroke: @color-accent;
+      }
+    }
+  }
+}
+
+.el-dialog__body {
+  .el-button.el-button--primary {
+    color: @color-white;
+    background-color: @color-accent;
+    border-color: @color-accent;
+
+    &:hover, &:focus {
+      color: @color-white;
+      background-color: fade(@color-accent, 75%);
+      border-color: fade(@color-accent, 75%);
+
+      span {
+        color: @color-white;
+      }
+    }
+  }
+}
+
+
+
+

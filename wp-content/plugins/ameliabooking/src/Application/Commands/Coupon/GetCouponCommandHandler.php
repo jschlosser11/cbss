@@ -1,0 +1,69 @@
+<?php
+/**
+ * @copyright © TMS-Plugins. All rights reserved.
+ * @licence   See LICENCE.md for license details.
+ */
+
+namespace AmeliaBooking\Application\Commands\Coupon;
+
+use AmeliaBooking\Application\Commands\CommandHandler;
+use AmeliaBooking\Application\Commands\CommandResult;
+use AmeliaBooking\Application\Common\Exceptions\AccessDeniedException;
+use AmeliaBooking\Domain\Common\Exceptions\InvalidArgumentException;
+use AmeliaBooking\Domain\Entity\Coupon\Coupon;
+use AmeliaBooking\Domain\Entity\Entities;
+use AmeliaBooking\Infrastructure\Common\Exceptions\QueryExecutionException;
+use AmeliaBooking\Infrastructure\Repository\Coupon\CouponRepository;
+
+/**
+ * Class GetCouponCommandHandler
+ *
+ * @package AmeliaBooking\Application\Commands\Coupon
+ */
+class GetCouponCommandHandler extends CommandHandler
+{
+    /**
+     * @param GetCouponCommand $command
+     *
+     * @return CommandResult
+     * @throws QueryExecutionException
+     * @throws InvalidArgumentException
+     * @throws AccessDeniedException
+     * @throws \Interop\Container\Exception\ContainerException
+     * @throws \AmeliaBooking\Infrastructure\Common\Exceptions\NotFoundException
+     */
+    public function handle(GetCouponCommand $command)
+    {
+        if (!$this->getContainer()->getPermissionsService()->currentUserCanRead(Entities::COUPONS)) {
+            throw new AccessDeniedException('You are not allowed to read coupon.');
+        }
+
+        $result = new CommandResult();
+
+        $this->checkMandatoryFields($command);
+
+        /** @var CouponRepository $couponRepository */
+        $couponRepository = $this->container->get('domain.coupon.repository');
+
+        $couponId = $command->getArg('id');
+
+        $coupon = $couponRepository->getById($couponId);
+
+        if (!$coupon instanceof Coupon) {
+            $result->setResult(CommandResult::RESULT_ERROR);
+            $result->setMessage('Could not get coupon coupon.');
+
+            return $result;
+        }
+
+        $result->setResult(CommandResult::RESULT_SUCCESS);
+        $result->setMessage('Successfully retrieved coupon.');
+        $result->setData(
+            [
+                Entities::COUPON => $coupon->toArray(),
+            ]
+        );
+
+        return $result;
+    }
+}

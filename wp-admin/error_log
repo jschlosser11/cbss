@@ -1,0 +1,35 @@
+[09-Oct-2013 22:31:47] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 820
+[09-Oct-2013 22:32:13] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 820
+[09-Oct-2013 22:33:25] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 820
+[09-Oct-2013 22:37:52] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[09-Oct-2013 22:39:49] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[19-Oct-2013 03:24:44] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[19-Oct-2013 03:28:53] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[19-Oct-2013 03:32:39] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[19-Oct-2013 03:35:22] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[19-Oct-2013 03:37:41] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[19-Oct-2013 03:39:50] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[26-Mar-2015 21:46:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[05-May-2015 16:22:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[05-May-2015 16:23:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[05-May-2015 16:23:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[05-May-2015 16:24:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jake/public_html/wp-content/plugins/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php on line 824
+[04-Jan-2017 13:44:17 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/jake/public_html/wp-admin/menu.php on line 23
+[26-May-2017 23:16:27 UTC] PHP Fatal error:  Call to a member function has_persons() on a non-object in /home/jake/public_html/wp-content/plugins/woocommerce-bookings/includes/admin/class-wc-bookings-cpt.php on line 255
+[13-Dec-2018 13:23:30 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:09 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:09 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:10 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:10 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:11 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:11 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:11 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:12 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:12 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:13 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:13 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:13 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:14 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:14 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[13-Jan-2019 13:03:15 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-admin/admin-functions.php on line 12
+[31-Oct-2019 13:00:12 UTC] PHP Fatal error:  Call to a member function get_var() on a non-object in /home/jake/public_html/wp-content/plugins/woocommerce-bookings/includes/integrations/class-wc-bookings-google-calendar-integration.php on line 495

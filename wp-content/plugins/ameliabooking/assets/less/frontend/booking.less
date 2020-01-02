@@ -1,0 +1,790 @@
+@import "_variables";
+
+.amelia-app-booking {
+
+  .am-spinner {
+    text-align: center;
+    padding-top: @padding-big*4;
+    padding-bottom: @padding-big*4;
+  }
+
+  #am-step-booking, .am-step-booking-catalog {
+    opacity: 0;
+    display: flex;
+    /*align-items: center;*/
+    max-width: 802px;
+    margin: @margin-big*2 auto;
+    border: 1px solid @color-divider-gray;
+    border-radius: 6px;
+    overflow: hidden;
+    -moz-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    background: #fff;
+    @media @less-then-medium {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    @media @less-then-small {
+      /*display: block;*/
+      opacity: 0;
+    }
+
+    &.am-desktop {
+      opacity: 1;
+    }
+
+    p {
+      margin-bottom: @margin-big;
+      text-align: center;
+      font-size: @regular-fs;
+
+    }
+
+    .am-select-service, .am-select-date {
+      width: 50%;
+      background-color: #fff;
+      padding: @padding-big*2;
+
+      .am-select-service-title, .am-select-date-title {
+        font-size: @regular-fs !important;
+        margin-bottom: @margin-big !important;
+      }
+    }
+
+    .am-select-service-date-transition {
+      -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    //STEP 1
+    .am-select-service {
+      transform: translateX(45%);
+
+      .am-button-wrapper {
+        text-align: center;
+        padding: @margin-big 0;
+      }
+
+      .am-grouped {
+        color: @color-text-prime;
+        margin: @margin-medium 0;
+      }
+
+      .am-add-element {
+        padding: @padding-small;
+        background-color: fade(@color-accent, 7%);
+        display: block;
+        border-radius: @border-radius;
+        border: 1px solid transparent;
+
+        &:hover {
+          border-color: @color-accent;
+        }
+      }
+    }
+
+    //STEP 2
+    .am-select-date {
+      transform: translateX(90%);
+      background: linear-gradient(135deg, @color-gradient1 0%, @color-gradient2 100%);
+
+      * {
+        color: @color-white;
+      }
+
+      .am-back {
+        display: none;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        cursor: pointer;
+      }
+
+      .am-calendar-picker {
+        background-color: transparent !important;
+        border: none !important;
+
+        div {
+          color: @color-white;
+          font-weight: @light;
+        }
+
+        .c-weekdays {
+          div {
+            font-weight: @regular;
+            opacity: 0.7;
+          }
+        }
+
+        .c-day-content {
+          &:hover {
+            background-color: #fff !important;
+            color: @color-accent !important;
+
+            div {
+              color: @color-accent !important;
+            }
+          }
+        }
+
+        .c-day-background {
+          /*background: @color-white !important;
+          color: @color-accent !important;*/
+          border: 1px solid fade(@color-white, 35%) !important;
+        }
+
+        .popover-content {
+          div, span {
+            color: @color-text-prime;
+            font-weight: @regular;
+          }
+
+          background: #fff !important;
+
+          table {
+            padding: 0;
+            margin: 0;
+          }
+
+          tr:nth-child(odd) {
+            background: #fff;
+          }
+
+          .c-table-cell {
+            &.c-active, &:hover {
+              background: fade(@color-accent, 15%);
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+
+      .am-appointment-times {
+        margin: @margin-small 0;
+        max-height: 136px;
+        overflow-y: auto;
+
+        .el-radio-button {
+          margin: @margin-small/4;
+
+          .el-radio-button__inner {
+            border: 1px solid @color-divider-gray;
+            border-radius: 3px;
+            background: transparent;
+            color: @color-white;
+            font-size: @mini-fs;
+            font-weight: @light;
+            padding: @padding-small;
+            opacity: 0.7;
+            width: 126px;
+
+            &:hover {
+              opacity: 1;
+              background: fade(#fff, 15%);
+            }
+          }
+
+          .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+            color: @color-accent;
+            background: #fff;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            opacity: 1;
+
+            &:hover {
+              color: @color-accent;
+            }
+          }
+
+          .el-radio-button__orig-radio:disabled + .el-radio-button__inner {
+            &:hover {
+              color: @color-light-gray;
+            }
+          }
+        }
+
+        .el-radio-group {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      .am-button-wrapper {
+        text-align: center;
+        margin: @margin-medium auto;
+
+        .el-button {
+          min-width: 98.2px;
+
+          &:hover {
+            background-color: fade(#fff, 85%);
+          }
+
+          span {
+            color: @color-accent;
+          }
+        }
+      }
+    }
+
+    &.am-active-picker {
+      .am-select-service {
+        transform: translateX(0%);
+
+        .am-button-wrapper {
+          transition: all 0.3s ease;
+          transition-delay: 0.5s;
+          transform: translateY(40px);
+          opacity: 0;
+          pointer-events: none;
+        }
+      }
+
+      .am-select-date {
+        transform: translateX(0%);
+      }
+    }
+
+    //collapsed on mobile
+    &.am-mobile-collapsed {
+      opacity: 1;
+      transition: all 0.3s;
+      transition-delay: 0.8s;
+      position: relative;
+      display: block;
+      //min-height: 580px;
+      .am-confirmation-booking-details {
+        display: block !important;
+
+        > div {
+          display: inline-block;
+          margin-bottom: @margin-medium;
+          min-width: 48%;
+        }
+      }
+
+      .am-select-service {
+        transform: translateX(0%);
+        width: 100%;
+        padding: @padding-medium;
+        box-sizing: border-box;
+
+        .am-button-wrapper {
+          transition: all 0.3s ease;
+          transition-delay: 0.15s;
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+
+      .am-select-date {
+        transform: translateX(101%);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        padding: @padding-medium 0;
+        z-index: 1;
+      }
+
+      &.am-active-picker {
+        min-height: 420px;
+
+        .am-select-service {
+          .am-button-wrapper {
+            opacity: 0;
+            transition-delay: 0s;
+          }
+        }
+
+        .am-select-date {
+          transform: translateX(0%);
+
+          .am-back {
+            display: block;
+          }
+        }
+
+        &.am-show-times {
+          min-height: 580px;
+          transition: none;
+        }
+      }
+
+      &.am-active-confirm {
+        .am-confirm-booking {
+          position: relative;
+        }
+
+        .am-select-service {
+          position: absolute;
+        }
+      }
+    }
+
+    //STEP 3
+    .am-confirm-booking {
+      transition: all 0.3s ease;
+      z-index: -1;
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 3%;
+      right: 0;
+      width: 97%;
+      background: #fff;
+      transform: translate(100%);
+
+      .am-confirmation-booking-header {
+        text-align: center;
+        margin-bottom: @margin-big;
+
+        img, svg {
+          border-radius: 50%;
+          max-width: 80px;
+          width: 80px;
+          height: 80px;
+        }
+
+        h2 {
+          font-weight: @medium;
+          padding: @padding-small;
+          margin: 0;
+        }
+      }
+
+      .am-custom-fields {
+        display: inline-block;
+        width: 100%;
+
+        .el-row {
+          padding-left: 12px;
+          padding-right: 12px;
+          margin-bottom: 0;
+
+          .el-col:nth-child(odd) {
+            clear: both;
+          }
+
+          .el-upload--text {
+            width: 100%;
+          }
+
+          .el-upload-dragger {
+            border: 2px dashed @color-accent;
+            height: 40px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            color: @color-accent;
+            box-sizing: border-box;
+            display: flex;
+            width: 100%;
+
+            .el-icon-upload {
+              margin: 0 0 0 0;
+            }
+
+            i {
+              display: inline;
+              padding: @padding-small/4;
+              color: @color-accent;
+              font-size: @medium-fs+4px;
+              line-height: 36px;
+            }
+
+            span {
+              color: @color-accent;
+            }
+          }
+        }
+      }
+
+      .el-form-item {
+        margin-bottom: @margin-medium;
+      }
+
+      p {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-size: @small-fs;
+        color: @color-text-prime;
+      }
+
+      p.am-align-right {
+        text-align: right;
+      }
+
+      .am-employee-photo {
+        border-radius: 50%;
+        width: 24px;
+        max-width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: @margin-small/2;
+      }
+
+      .el-row {
+        margin-bottom: @margin-small;
+        padding: 0 @padding-small;
+      }
+
+      .am-add-coupon {
+        margin-bottom: @margin-medium;
+
+        span {
+          color: @color-accent;
+          font-size: @mini-fs;
+        }
+
+        .el-input__inner {
+          height: 32px;
+        }
+
+        svg, img {
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          margin-right: 2px;
+          vertical-align: middle;
+
+          path {
+            fill: @color-accent;
+          }
+        }
+
+        .el-form-item {
+          margin-bottom: 0;
+        }
+
+        .el-form-item__content {
+          position: static;
+        }
+
+        .el-form-item__error {
+          padding-left: @padding-small;
+          padding-top: 1px;
+        }
+
+        .el-input-group__append, .el-input-group__prepend {
+          background-color: @color-accent;
+          color: @color-white;
+          border-color: @color-accent;
+
+          &:hover {
+            background-color: fade(@color-accent, 15%);
+            border-color: fade(@color-accent, 15%);
+
+            .el-button {
+              color: @color-text-prime;
+              background-color: transparent;
+              border-color: transparent;
+            }
+          }
+
+          .el-button {
+            background-color: transparent;
+            border-color: transparent;
+            color: @color-white;
+          }
+        }
+      }
+
+      .am-add-coupon-field {
+        span {
+          visibility: hidden;
+        }
+      }
+
+      .am-confirmation-extras-cost {
+        background-color: fade(@color-accent, 10%);
+        padding-top: @padding-small/2;
+        padding-bottom: @padding-small/2;
+
+        div {
+          line-height: 24px;
+        }
+
+        .el-collapse {
+          border: none;
+
+          .el-collapse-item__header {
+            height: 24px;
+            border: none;
+            margin: 0;
+            padding: 0;
+            font-size: @small-fs;
+            color: @color-text-prime;
+            background: none;
+
+            .am-extras-title {
+              display: inline-block;
+              font-weight: @regular;
+              padding-left: 12px;
+            }
+
+            .am-extras-total-cost {
+              float: right;
+              margin-left: @margin-small;
+            }
+
+            i {
+              line-height: 24px;
+              margin-right: -3px;
+              margin-left: 1px;
+            }
+          }
+
+          .el-collapse-item__wrap {
+            background: none;
+            border: none;
+            padding-left: @padding-big/2;
+
+            .el-collapse-item__content {
+              padding: 0;
+
+              .am-extras-details {
+                display: inline-block;
+              }
+
+              .am-extras-cost {
+                display: inline-block;
+                float: right;
+                padding-right: @padding-big/2;
+              }
+            }
+          }
+        }
+      }
+
+      .am-confirm-booking-form {
+        .am-confirm-booking-data {
+          margin-bottom: 0;
+        }
+
+        .am-confirm-booking-payment {
+          margin-top: -24px;
+        }
+
+        .am-confirmation-booking-details {
+          border-bottom: 1px solid @color-divider-gray;
+          margin-bottom: @margin-big;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-top: 1px solid @color-divider-gray;
+          padding: @padding-medium 0;
+          @media @less-then-medium {
+
+          }
+
+          > div {
+            margin-right: @margin-small;
+
+            p {
+              margin: 0 0 @margin-small/2 !important;
+            }
+          }
+        }
+      }
+
+      .am-confirmation-total {
+        background-color: fade(@color-accent, 10%);
+        padding: @padding-small;
+
+        p {
+          /*font-size: @big-fs - 2px;*/
+          font-weight: @medium;
+          margin: 0 !important;
+          padding: 0;
+          @media @less-then-small {
+            /*font-size: @medium-fs;*/
+          }
+
+          &.am-align-right {
+            color: @color-accent;
+          }
+        }
+      }
+
+      .am-confirmation-extras-cost {
+        padding-top: 0;
+        background-color: fade(@color-accent, 10%);
+        padding-bottom: 0;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .dialog-footer {
+        margin-top: @margin-big;
+        text-align: center;
+      }
+
+      .dialog-footer-no-margin {
+        margin-top: 0;
+      }
+    }
+
+    &.am-active-confirm {
+      min-height: 760px;
+
+      &.am-mobile-collapsed {
+
+      }
+
+      .am-select-service {
+        transform: translateX(-200%);
+        position: absolute;
+      }
+
+      .am-select-date {
+        transform: translateX(-94%);
+        left: 0%;
+        min-height: 720px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        .am-calendar-picker, p {
+          transition: all 0.1s;
+          opacity: 0;
+          transition-delay: 0.5s;
+        }
+      }
+
+      .am-confirm-booking {
+        //transition-delay: 0.5s;
+        z-index: 1;
+        display: block;
+        width: 97%;
+        position: relative;
+        bottom: 0;
+        top: 0;
+        left: 3%;
+        right: 0;
+        opacity: 1;
+        padding: @padding-big @padding-medium;
+        box-sizing: border-box;
+        min-height: 720px;
+        transform: translate(0);
+
+        @media @less-then-medium {
+          left: 0;
+          right: 0;
+          width: 100%;
+
+        }
+      }
+    }
+
+    &.am-active-submit {
+      min-height: inherit;
+
+      &.am-mobile-collapsed {
+        min-height: inherit;
+      }
+
+      .am-select-service {
+        display: none;
+      }
+
+      .am-select-date {
+        display: none;
+      }
+
+      .am-confirm-booking {
+        display: none;
+      }
+    }
+
+    .am-waiting-confirmation, .am-success-payment, .am-booking-fetched {
+      text-align: center;
+      background: #fff;
+      z-index: 2;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 0 auto;
+      padding: @padding-big*3;
+      @media @less-then-small {
+        padding: @padding-medium;
+      }
+
+      h4 {
+        text-transform: uppercase;
+        margin-bottom: @margin-big;
+        color: @color-text-second;
+        letter-spacing: 2px;
+      }
+
+      .el-button a {
+        color: @color-white;
+      }
+
+      .am-svg-wrapper {
+        position: relative;
+        margin: 0 0 @margin-big;
+
+        .am-hourglass {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 32px;
+          height: 42px;
+          padding: 0;
+          margin-left: -16px;
+          margin-top: -24px;
+
+          path {
+            fill: @color-accent;
+          }
+        }
+
+        .am-congrats {
+          width: 96px;
+          padding: 0;
+          margin: @margin-big;
+          /*border-radius: 50%;
+          border: 2px solid @color-divider-gray;*/
+
+          path {
+            fill: @color-accent;
+          }
+        }
+
+        .am-spin {
+          width: 160px;
+          padding: 0;
+          margin: 0;
+
+          path {
+            stroke: @color-accent;
+          }
+        }
+      }
+
+    }
+
+    .am-booking-fetched {
+      padding-top: 220px;
+    }
+
+  }
+}
+
+.StripeElement {
+  margin-top: 3%;
+}

@@ -1,0 +1,101 @@
+@import "_variables";
+
+.amelia-app-booking, .am-modal.am-in-body {
+
+  *:focus:not(.is-focus):not(:active) {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .el-input-group__prepend {
+    background-color: @color-light-gray;
+    border-color: #dddddd;
+
+    .el-input {
+      margin-bottom: 0;
+      min-width: 75px;
+    }
+  }
+
+  .el-input-group--prepend .el-input__inner, .el-input-group__append {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  .el-input-group__prepend div.el-select .el-input__inner, .el-input-group__prepend div.el-select:hover .el-input__inner {
+    border-color: transparent;
+    background-color: transparent;
+    color: inherit;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .el-form-item.is-success .el-input__inner, .el-form-item.is-success .el-input__inner:focus, .el-form-item.is-success .el-textarea__inner, .el-form-item.is-success .el-textarea__inner:focus {
+    border-color: @color-divider-gray;
+  }
+
+  .payment-dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    div.paypal-button {
+      position: relative;
+
+      #am-paypal-button-container {
+        opacity: 0.01;
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        z-index: 2;
+      }
+
+      span {
+        position: relative;
+      }
+    }
+  }
+
+  .calendar-link {
+    a:hover, a:visited, a:link, a:active {
+      text-decoration: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    &.is-disabled {
+      color: @color-gray;
+    }
+  }
+
+  .redirect-link {
+    a {
+      text-decoration: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .el-form-item__content {
+    line-height: 1;
+  }
+
+}
+
+.el-popper {
+  max-width: 97%;
+  font-family: @font;
+  .el-select-dropdown__item {
+    white-space: normal;
+    min-height: 40px;
+    height: auto;
+  }
+}
+
+.el-button {
+  margin: 0 @margin-small @margin-small;
+}

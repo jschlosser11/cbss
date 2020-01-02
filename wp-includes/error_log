@@ -1,0 +1,160 @@
+[22-Aug-2015 20:53:17 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/canonical.php on line 530
+[22-Aug-2015 20:53:19 America/Chicago] PHP Fatal error:  Call to undefined function is_robots() in /home/jake/public_html/wp-includes/template-loader.php on line 28
+[22-Aug-2015 20:53:19 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-atom-comments.php on line 8
+[22-Aug-2015 20:53:25 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/shortcodes.php on line 388
+[22-Aug-2015 20:53:25 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/default-filters.php on line 17
+[22-Aug-2015 20:53:25 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/registration.php on line 7
+[22-Aug-2015 20:53:29 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/ms-functions.php on line 1748
+[22-Aug-2015 20:53:29 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/admin-bar.php on line 40
+[22-Aug-2015 20:53:29 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/class-snoopy.php on line 6
+[22-Aug-2015 20:53:29 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss-functions.php on line 8
+[22-Aug-2015 20:53:30 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/post-template.php on line 993
+[22-Aug-2015 20:53:31 America/Chicago] PHP Fatal error:  Class 'IXR_Server' not found in /home/jake/public_html/wp-includes/class-wp-xmlrpc-server.php on line 22
+[22-Aug-2015 20:53:31 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/user.php on line 71
+[22-Aug-2015 20:53:32 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[22-Aug-2015 20:53:32 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[22-Aug-2015 20:53:32 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[22-Aug-2015 20:53:32 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rss.php on line 8
+[22-Aug-2015 20:53:33 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/registration-functions.php on line 7
+[22-Aug-2015 20:53:33 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rdf.php on line 8
+[22-Aug-2015 20:53:34 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/taxonomy.php on line 121
+[22-Aug-2015 20:53:34 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/post.php on line 165
+[22-Aug-2015 20:53:34 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/ms-default-filters.php on line 17
+[22-Aug-2015 20:53:38 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/comment-template.php on line 1474
+[22-Aug-2015 20:53:38 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/author-template.php on line 453
+[22-Aug-2015 20:53:39 America/Chicago] PHP Fatal error:  Class 'WP_Dependencies' not found in /home/jake/public_html/wp-includes/class.wp-styles.php on line 19
+[22-Aug-2015 20:53:39 America/Chicago] PHP Fatal error:  Call to undefined function is_admin() in /home/jake/public_html/wp-includes/vars.php on line 20
+[22-Aug-2015 20:53:40 America/Chicago] PHP Fatal error:  Class 'WP_Dependencies' not found in /home/jake/public_html/wp-includes/class.wp-scripts.php on line 19
+[22-Aug-2015 20:53:41 America/Chicago] PHP Fatal error:  Class 'IXR_Client' not found in /home/jake/public_html/wp-includes/class-wp-http-ixr-client.php on line 9
+[22-Aug-2015 20:53:42 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss.php on line 19
+[22-Aug-2015 20:53:46 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/theme.php on line 588
+[22-Aug-2015 20:53:46 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/kses.php on line 1393
+[22-Aug-2015 20:53:50 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/nav-menu-template.php on line 17
+[22-Aug-2015 20:53:50 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/category-template.php on line 767
+[22-Aug-2015 20:53:52 America/Chicago] PHP Warning:  require_once(ABSPATHWPINC/class-simplepie.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/class-feed.php on line 4
+[22-Aug-2015 20:53:52 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-simplepie.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/class-feed.php on line 4
+[22-Aug-2015 20:53:53 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/ms-default-constants.php on line 151
+[22-Aug-2015 20:53:53 America/Chicago] PHP Warning:  require(ABSPATHWPINC/SimplePie/Misc.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/class-simplepie.php on line 5
+[22-Aug-2015 20:53:53 America/Chicago] PHP Warning:  require(ABSPATHWPINC/SimplePie/Misc.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/class-simplepie.php on line 5
+[22-Aug-2015 20:53:53 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/SimplePie/Misc.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/class-simplepie.php on line 5
+[22-Aug-2015 20:53:54 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-atom.php on line 8
+[22-Aug-2015 20:53:59 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[22-Aug-2015 20:53:59 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[22-Aug-2015 20:53:59 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/functions.php on line 8
+[22-Aug-2015 20:54:04 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/post-formats.php on line 170
+[22-Aug-2015 20:54:06 America/Chicago] PHP Fatal error:  Call to undefined function add_shortcode() in /home/jake/public_html/wp-includes/media.php on line 611
+[22-Aug-2015 20:54:08 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/general-template.php on line 1334
+[22-Aug-2015 20:54:09 America/Chicago] PHP Fatal error:  Call to undefined function is_main_site() in /home/jake/public_html/wp-includes/update.php on line 603
+[22-Aug-2015 20:54:09 America/Chicago] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home/jake/public_html/wp-includes/class-wp-image-editor-gd.php on line 17
+[22-Aug-2015 20:54:09 America/Chicago] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home/jake/public_html/wp-includes/class-wp-image-editor-imagick.php on line 17
+[22-Aug-2015 20:54:10 America/Chicago] PHP Fatal error:  Class 'WP_Widget' not found in /home/jake/public_html/wp-includes/default-widgets.php on line 14
+[22-Aug-2015 20:54:13 America/Chicago] PHP Warning:  require(ABSPATHWPINC/ms-load.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/ms-settings.php on line 14
+[22-Aug-2015 20:54:13 America/Chicago] PHP Warning:  require(ABSPATHWPINC/ms-load.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/ms-settings.php on line 14
+[22-Aug-2015 20:54:13 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/ms-load.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/ms-settings.php on line 14
+[22-Aug-2015 20:54:13 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/class-wp-embed.php on line 20
+[22-Aug-2015 20:54:15 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rss2-comments.php on line 8
+[22-Aug-2015 23:34:54 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rss2.php on line 8
+[05-Nov-2015 09:11:14 America/Chicago] PHP Warning:  require(ABSPATHWPINC/SimplePie/Misc.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/class-simplepie.php on line 5
+[05-Nov-2015 09:11:14 America/Chicago] PHP Warning:  require(ABSPATHWPINC/SimplePie/Misc.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/class-simplepie.php on line 5
+[05-Nov-2015 09:11:14 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/SimplePie/Misc.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/class-simplepie.php on line 5
+[05-Nov-2015 09:11:14 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-atom-comments.php on line 8
+[05-Nov-2015 09:11:15 America/Chicago] PHP Fatal error:  Class 'IXR_Server' not found in /home/jake/public_html/wp-includes/class-wp-xmlrpc-server.php on line 23
+[05-Nov-2015 09:11:16 America/Chicago] PHP Warning:  require_once(ABSPATHWPINC/class-simplepie.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/class-feed.php on line 4
+[05-Nov-2015 09:11:16 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-simplepie.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/class-feed.php on line 4
+[05-Nov-2015 09:11:17 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rss2.php on line 8
+[05-Nov-2015 09:11:17 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/class-snoopy.php on line 6
+[05-Nov-2015 09:11:19 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rss2-comments.php on line 8
+[05-Nov-2015 09:11:20 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rss.php on line 8
+[05-Nov-2015 09:11:21 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/nav-menu-template.php on line 16
+[05-Nov-2015 09:11:21 America/Chicago] PHP Fatal error:  Class 'WP_Widget' not found in /home/jake/public_html/wp-includes/default-widgets.php on line 14
+[05-Nov-2015 09:11:22 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rdf.php on line 8
+[05-Nov-2015 09:11:24 America/Chicago] PHP Fatal error:  Call to undefined function is_robots() in /home/jake/public_html/wp-includes/template-loader.php on line 28
+[05-Nov-2015 09:11:25 America/Chicago] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home/jake/public_html/wp-includes/class-wp-image-editor-imagick.php on line 17
+[05-Nov-2015 09:11:26 America/Chicago] PHP Fatal error:  Call to undefined function is_admin() in /home/jake/public_html/wp-includes/vars.php on line 23
+[05-Nov-2015 09:11:28 America/Chicago] PHP Warning:  require_once(ABSPATHWPINC/ms-load.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/ms-settings.php on line 14
+[05-Nov-2015 09:11:28 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/ms-load.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/ms-settings.php on line 14
+[05-Nov-2015 09:11:29 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/registration-functions.php on line 7
+[05-Nov-2015 09:11:31 America/Chicago] PHP Fatal error:  Class 'WP_Dependencies' not found in /home/jake/public_html/wp-includes/class.wp-styles.php on line 19
+[05-Nov-2015 09:11:33 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/comment-template.php on line 1680
+[05-Nov-2015 09:11:37 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[05-Nov-2015 09:11:37 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[05-Nov-2015 09:11:37 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/functions.php on line 8
+[05-Nov-2015 09:11:37 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/class-wp-embed.php on line 28
+[05-Nov-2015 09:11:38 America/Chicago] PHP Fatal error:  Class 'IXR_Client' not found in /home/jake/public_html/wp-includes/class-wp-http-ixr-client.php on line 9
+[05-Nov-2015 09:11:38 America/Chicago] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home/jake/public_html/wp-includes/class-wp-image-editor-gd.php on line 17
+[05-Nov-2015 09:11:39 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/post-template.php on line 1325
+[05-Nov-2015 09:11:41 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[05-Nov-2015 09:11:41 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[05-Nov-2015 09:11:41 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[05-Nov-2015 09:11:42 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/registration.php on line 7
+[05-Nov-2015 09:11:44 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/category-template.php on line 967
+[05-Nov-2015 09:11:45 America/Chicago] PHP Fatal error:  Call to undefined function add_shortcode() in /home/jake/public_html/wp-includes/media.php on line 831
+[05-Nov-2015 09:11:45 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/default-filters.php on line 17
+[05-Nov-2015 09:11:47 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss-functions.php on line 8
+[05-Nov-2015 09:11:48 America/Chicago] PHP Fatal error:  Class 'WP_Dependencies' not found in /home/jake/public_html/wp-includes/class.wp-scripts.php on line 19
+[05-Nov-2015 09:11:49 America/Chicago] PHP Fatal error:  Call to undefined function is_main_site() in /home/jake/public_html/wp-includes/update.php on line 678
+[05-Nov-2015 09:11:50 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss.php on line 19
+[05-Nov-2015 09:11:52 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-atom.php on line 8
+[05-Nov-2015 09:11:58 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/ms-default-filters.php on line 16
+[16-Nov-2015 21:56:07 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-atom.php on line 8
+[16-Nov-2015 21:56:07 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/class-wp-embed.php on line 28
+[16-Nov-2015 21:56:07 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss-functions.php on line 8
+[16-Nov-2015 21:56:07 America/Chicago] PHP Fatal error:  Call to undefined function is_robots() in /home/jake/public_html/wp-includes/template-loader.php on line 28
+[16-Nov-2015 21:56:15 America/Chicago] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home/jake/public_html/wp-includes/class-wp-image-editor-imagick.php on line 17
+[16-Nov-2015 21:56:17 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-atom-comments.php on line 8
+[16-Nov-2015 21:56:18 America/Chicago] PHP Warning:  require_once(ABSPATHWPINC/class-simplepie.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/class-feed.php on line 4
+[16-Nov-2015 21:56:18 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-simplepie.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/class-feed.php on line 4
+[16-Nov-2015 21:56:20 America/Chicago] PHP Fatal error:  Class 'WP_Dependencies' not found in /home/jake/public_html/wp-includes/class.wp-styles.php on line 19
+[16-Nov-2015 21:56:21 America/Chicago] PHP Fatal error:  Class 'WP_Dependencies' not found in /home/jake/public_html/wp-includes/class.wp-scripts.php on line 19
+[16-Nov-2015 21:56:23 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/nav-menu-template.php on line 16
+[16-Nov-2015 21:56:27 America/Chicago] PHP Fatal error:  Class 'IXR_Server' not found in /home/jake/public_html/wp-includes/class-wp-xmlrpc-server.php on line 23
+[16-Nov-2015 21:56:29 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rss2.php on line 8
+[16-Nov-2015 21:56:35 America/Chicago] PHP Fatal error:  Call to undefined function is_admin() in /home/jake/public_html/wp-includes/vars.php on line 23
+[16-Nov-2015 21:56:36 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/post-template.php on line 1325
+[16-Nov-2015 21:56:38 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/category-template.php on line 967
+[16-Nov-2015 21:56:41 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[16-Nov-2015 21:56:41 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[16-Nov-2015 21:56:41 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[16-Nov-2015 21:56:42 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rss2-comments.php on line 8
+[16-Nov-2015 21:56:42 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/default-filters.php on line 17
+[16-Nov-2015 21:56:42 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/comment-template.php on line 1680
+[16-Nov-2015 21:56:43 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/registration.php on line 7
+[16-Nov-2015 21:56:45 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/jake/public_html/wp-includes/ms-default-filters.php on line 16
+[16-Nov-2015 21:56:46 America/Chicago] PHP Fatal error:  Class 'IXR_Client' not found in /home/jake/public_html/wp-includes/class-wp-http-ixr-client.php on line 9
+[16-Nov-2015 21:56:51 America/Chicago] PHP Warning:  require(ABSPATHWPINC/SimplePie/Misc.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/class-simplepie.php on line 5
+[16-Nov-2015 21:56:51 America/Chicago] PHP Warning:  require(ABSPATHWPINC/SimplePie/Misc.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/class-simplepie.php on line 5
+[16-Nov-2015 21:56:51 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/SimplePie/Misc.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/class-simplepie.php on line 5
+[16-Nov-2015 21:56:52 America/Chicago] PHP Fatal error:  Call to undefined function is_main_site() in /home/jake/public_html/wp-includes/update.php on line 678
+[16-Nov-2015 21:56:55 America/Chicago] PHP Fatal error:  Call to undefined function add_shortcode() in /home/jake/public_html/wp-includes/media.php on line 831
+[16-Nov-2015 21:56:55 America/Chicago] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home/jake/public_html/wp-includes/class-wp-image-editor-gd.php on line 17
+[16-Nov-2015 21:57:00 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rss.php on line 8
+[16-Nov-2015 21:57:02 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/registration-functions.php on line 7
+[16-Nov-2015 21:57:03 America/Chicago] PHP Warning:  require_once(ABSPATHWPINC/ms-load.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/ms-settings.php on line 14
+[16-Nov-2015 21:57:03 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/ms-load.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/ms-settings.php on line 14
+[16-Nov-2015 21:57:08 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss.php on line 19
+[16-Nov-2015 21:57:08 America/Chicago] PHP Fatal error:  Class 'WP_Widget' not found in /home/jake/public_html/wp-includes/default-widgets.php on line 14
+[16-Nov-2015 21:57:11 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home/jake/public_html/wp-includes/feed-rdf.php on line 8
+[16-Nov-2015 21:57:13 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/class-snoopy.php on line 6
+[16-Nov-2015 22:32:27 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[16-Nov-2015 22:32:27 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[16-Nov-2015 22:32:27 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/functions.php on line 8
+[27-Dec-2016 15:28:10 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/registration-functions.php on line 7
+[04-Jan-2017 14:20:03 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[04-Jan-2017 14:20:04 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[04-Jan-2017 14:20:04 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/functions.php on line 8
+[06-Jan-2017 16:31:06 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/registration-functions.php on line 7
+[04-Feb-2017 03:40:47 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss-functions.php on line 8
+[04-Feb-2017 03:40:48 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss-functions.php on line 8
+[04-Feb-2017 03:40:48 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss-functions.php on line 8
+[22-Apr-2017 00:21:29 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home/jake/public_html/wp-includes/nav-menu-template.php on line 16
+[22-Apr-2017 00:21:55 America/Chicago] PHP Fatal error:  Class 'WP_Widget' not found in /home/jake/public_html/wp-includes/default-widgets.php on line 14
+[22-Apr-2017 00:21:56 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home/jake/public_html/wp-includes/default-filters.php on line 17
+[22-Apr-2017 00:22:03 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[22-Apr-2017 00:22:03 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/functions.php on line 8
+[22-Apr-2017 00:22:03 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/functions.php on line 8
+[22-Apr-2017 00:22:04 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[22-Apr-2017 00:22:04 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[22-Apr-2017 00:22:04 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/opt/php54/lib/php') in /home/jake/public_html/wp-includes/script-loader.php on line 25
+[22-Apr-2017 00:22:18 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss.php on line 19
+[22-Apr-2017 00:22:40 America/Chicago] PHP Fatal error:  Call to undefined function is_admin() in /home/jake/public_html/wp-includes/vars.php on line 23
+[16-May-2017 12:04:04 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/jake/public_html/wp-includes/rss-functions.php on line 8

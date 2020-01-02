@@ -1,0 +1,14 @@
+[16/Dec/2019:17:36:28] (ℹ️): WordPress Instance Info:
+[16/Dec/2019:17:36:28] (ℹ️): Home URL : http://surfschool.local
+[16/Dec/2019:17:36:28] (ℹ️): Site URL : http://surfschool.local
+[16/Dec/2019:17:36:28] (ℹ️): WordPress Version : 5.3.1
+[16/Dec/2019:17:36:28] (ℹ️): Onboarding Version : 1.7.12
+[16/Dec/2019:17:36:28] (ℹ️): Multisite : No
+[16/Dec/2019:17:36:28] (ℹ️): Server Info : Apache
+[16/Dec/2019:17:36:28] (ℹ️): PHP Version : 7.2.21
+[16/Dec/2019:17:36:28] (ℹ️): HTTPS : No
+[16/Dec/2019:17:36:28] (ℹ️): PHP Max Execution Time : 30
+[16/Dec/2019:17:36:28] (ℹ️): PHP Max Input Vars : 1000
+[16/Dec/2019:17:36:28] (ℹ️): Max Upload Size : 8388608
+[16/Dec/2019:17:36:28] (ℹ️): Plugins:
+[16/Dec/2019:17:36:28] (ℹ️): [PLUGIN] Gutenberg Blocks and Template Library by Otter : v1.3.1 (ThemeIsle)
